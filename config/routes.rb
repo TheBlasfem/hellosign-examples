@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   post 'hellosign/callback'
+  get 'hellosign/:id' => "hellosign#show"
+  get 'hellosign/create', as: :create_template
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

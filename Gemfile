@@ -32,7 +32,8 @@ gem 'spring',        group: :development
 
 gem 'puma'
 gem 'hellosign-ruby-sdk'
-gem 'dotenv'
+
+gem 'dotenv-rails', :groups => [:development, :test]
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
