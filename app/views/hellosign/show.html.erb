@@ -3,6 +3,7 @@ Hi Im here
 <script type="text/javascript" src="//s3.amazonaws.com/cdn.hellofax.com/js/embedded.js"></script>
 
 <script type="text/javascript">
+  window.alert("<%= ENV['HELLOSIGN_CLIENTID'] %>");
   HelloSign.init("<%= ENV['HELLOSIGN_CLIENTID'] %>");
   HelloSign.open({ url: '<%= @template.edit_url %>' });
 </script>
